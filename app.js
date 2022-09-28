@@ -22,8 +22,8 @@ app.use(express.urlencoded({
 
 
 app.use("/api/auth", authRoutes);
-app.use("/api/projects", blogRoutes);
-app.use("/api/contact", contactRoutes);
+app.use("/api/projects", authMiddleware, blogRoutes);
+app.use("/api/contact", authMiddleware, contactRoutes);
 
 app.use(errorHandler);
 
@@ -32,9 +32,9 @@ const port = process.env.PORT || 8000;
 
 const start = async () => {
   try {
-    await mongoose.connect('mongodb+srv://oluwaferanmi:Ade2niji@cluster0.jmpfoel.mongodb.net/?retryWrites=true&w=majority');
+    await mongoose.connect('db_url');
     app.listen(port, () => {
-      console.log("Speak for the app is listening");
+      console.log("DB connected successfully");
     });
   } catch (err) {
     console.log(err);
