@@ -1,6 +1,6 @@
-# Blog API
+# Express API
 
-A blog API built with Node js
+A Express API built with Node js
 
 ## Features
 - ### Authentication

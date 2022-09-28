@@ -7,7 +7,6 @@ require("dotenv").config();
 // routing
 const authRoutes = require("./routes/auth");
 const blogRoutes = require("./routes/project");
-const fileRoutes = require("./routes/file");
 
 // middlewares
 const authMiddleware = require("./middlewares/auth");
@@ -22,7 +21,6 @@ app.use(express.urlencoded({
 
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", blogRoutes);
-app.use("/api/file", fileRoutes);
 
 app.use(errorHandler);
 
