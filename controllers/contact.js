@@ -4,9 +4,9 @@ const { NotFoundError } = require("../errors");
 const createContact = async (req, res) => {
   req.body.author = "Contact Form";
 
-  const Contact = await Contact.create(req.body);
+  const Contacts = await Contact.create(req.body);
 
-  res.status(201).json(Contact);
+  res.status(201).json(Contacts);
 };
 
 const getContacts = async (req, res) => {
