@@ -22,7 +22,7 @@ app.use(express.urlencoded({
 
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", blogRoutes);
-app.use("/api/contact", blogRoutes);
+app.use("/api/contact", contactRoutes);
 
 app.use(errorHandler);
 
