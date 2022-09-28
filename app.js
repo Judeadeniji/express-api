@@ -20,6 +20,7 @@ app.use(express.urlencoded({
 .use(cors())
 .use(express.json());
 
+
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", blogRoutes);
 app.use("/api/contact", contactRoutes);
