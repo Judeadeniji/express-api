@@ -31,7 +31,7 @@ const port = process.env.PORT || 8000;
 
 const start = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect('mongodb+srv://oluwaferanmi:Ade2niji@cluster0.jmpfoel.mongodb.net/?retryWrites=true&w=majority');
     app.listen(port, () => {
       console.log("Speak for the app is listening");
     });
