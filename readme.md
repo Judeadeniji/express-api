@@ -26,7 +26,7 @@ A Express API built with Node js
 - nodemailer - Sending confirmation Emails
 - jest - Testing
 
-- ## Changes
+## Changes
  - Project file is referred to as `post` and exported as `post`
 
 See package.json for full list of Dependencies
