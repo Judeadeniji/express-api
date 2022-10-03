@@ -27,6 +27,6 @@ A Express API built with Node js
 - jest - Testing
 
 - ## Changes
-   - Project file is referred to as `post` and exported as `pos
+ - Project file is referred to as `post` and exported as `post`
 
 See package.json for full list of Dependencies
